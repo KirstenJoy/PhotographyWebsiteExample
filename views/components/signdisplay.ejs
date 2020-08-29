@@ -1,0 +1,35 @@
+<!--Display Details Section-->
+<div class="jumbotron ">
+    <div class="container text-center mx-auto">
+        <h1 class="text-center mx-auto"> Your Details</h1>
+        <br><br>
+        <div class="row text-center mx-auto">
+            <% for(var x =0; x < signins.length; x++){ %>
+
+                <div class="card text-center mx-auto" style="width: 18rem;">
+
+                    <div class="card-body">
+                        <p>
+                            <%= signins[x].name %>
+                        </p>
+                        <h5 class="card-title">
+                            <%= signins[x].surname %>
+                        </h5>
+                        <p class="card-text">
+                            <%= signins[x].email %>
+                        </p>
+                        <div class="card-footer">
+                            <p>
+                                <%= signins[x].number %>
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <%  }  %>
+        </div>
+        <br><br>
+    </div>
+
+</div>
